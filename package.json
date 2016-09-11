@@ -1,0 +1,29 @@
+{
+  "name": "trainning-plans",
+  "version": "1.0.0",
+  "description": "web ap with running ,swimming and bike plans",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosminsalagean/trainning-plans.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cosminsalagean/trainning-plans/issues"
+  },
+  "homepage": "https://github.com/cosminsalagean/trainning-plans#readme",
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-plugin-module-alias": "^1.6.0",
+    "webpack": "^1.13.2"
+  }
+}
