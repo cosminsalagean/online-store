@@ -1,29 +1,63 @@
 {
-  "name": "trainning-plans",
+  "name": "es6-webpack-babel-skeleton",
   "version": "1.0.0",
-  "description": "web ap with running ,swimming and bike plans",
-  "main": "index.js",
+  "description": "es6-webpack-babel-skeleton project",
+  "main": "frontend/scripts/app.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "test": "karma start",
+    "dev": "webpack-dev-server --progress --colors --config",
+    "dev-tdd": "karma start | npm run dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cosminsalagean/trainning-plans.git"
+    "url": "https://github.com/vnovick/es6-webpack-babel-skeleton.git"
   },
-  "author": "",
+  "keywords": [
+    "es6",
+    "webpack",
+    "babel",
+    "skeleton",
+    "scss"
+  ],
+  "author": "Vladimir Novick",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cosminsalagean/trainning-plans/issues"
+    "url": "https://github.com/vnovick/es6-webpack-babel-skeleton/issues"
   },
-  "homepage": "https://github.com/cosminsalagean/trainning-plans#readme",
-  "dependencies": {
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1"
-  },
+  "homepage": "https://github.com/vnovick/es6-webpack-babel-skeleton",
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.14.0",
-    "babel-plugin-module-alias": "^1.6.0",
-    "webpack": "^1.13.2"
+    "jsdom": "^5.4.3",
+    "karma-opera-launcher": "^0.1.0",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha-jsdom": "^0.5.0",
+    "phantomjs": "^1.9.17"
+  },
+  "dependencies": {
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.3.1",
+    "babel-runtime": "^5.6.15",
+    "chai": "^3.0.0",
+    "core-js": "^0.9.18",
+    "css-loader": "^0.15.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "karma": "^0.12.37",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.6.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-debug": "^0.1.2",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-webpack": "^1.5.1",
+    "mocha": "^2.2.5",
+    "node-sass": "^3.2.0",
+    "react": "^0.13.3",
+    "sass-loader": "^1.0.2",
+    "sinon": "^1.15.4",
+    "webpack": "^1.10.0",
+    "webpack-dev-server": "^1.10.1"
   }
 }
