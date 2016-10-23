@@ -1,63 +1,42 @@
 {
-  "name": "es6-webpack-babel-skeleton",
+  "name": "angular-quickstart",
   "version": "1.0.0",
-  "description": "es6-webpack-babel-skeleton project",
-  "main": "frontend/scripts/app.js",
   "scripts": {
-    "test": "karma start",
-    "dev": "webpack-dev-server --progress --colors --config",
-    "dev-tdd": "karma start | npm run dev"
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vnovick/es6-webpack-babel-skeleton.git"
-  },
-  "keywords": [
-    "es6",
-    "webpack",
-    "babel",
-    "skeleton",
-    "scss"
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
   ],
-  "author": "Vladimir Novick",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vnovick/es6-webpack-babel-skeleton/issues"
-  },
-  "homepage": "https://github.com/vnovick/es6-webpack-babel-skeleton",
-  "devDependencies": {
-    "jsdom": "^5.4.3",
-    "karma-opera-launcher": "^0.1.0",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "mocha-jsdom": "^0.5.0",
-    "phantomjs": "^1.9.17"
-  },
   "dependencies": {
-    "babel-core": "^5.6.15",
-    "babel-loader": "^5.3.1",
-    "babel-runtime": "^5.6.15",
-    "chai": "^3.0.0",
-    "core-js": "^0.9.18",
-    "css-loader": "^0.15.1",
-    "extract-text-webpack-plugin": "^0.8.2",
-    "karma": "^0.12.37",
-    "karma-chai": "^0.1.0",
-    "karma-chai-plugins": "^0.6.0",
-    "karma-chrome-launcher": "^0.2.0",
-    "karma-cli": "^0.1.0",
-    "karma-firefox-launcher": "^0.1.6",
-    "karma-ie-launcher": "^0.2.0",
-    "karma-mocha": "^0.2.0",
-    "karma-mocha-debug": "^0.1.2",
-    "karma-safari-launcher": "^0.1.1",
-    "karma-sourcemap-loader": "^0.3.5",
-    "karma-webpack": "^1.5.1",
-    "mocha": "^2.2.5",
-    "node-sass": "^3.2.0",
-    "react": "^0.13.3",
-    "sass-loader": "^1.0.2",
-    "sinon": "^1.15.4",
-    "webpack": "^1.10.0",
-    "webpack-dev-server": "^1.10.1"
+    "@angular/common": "~2.1.0",
+    "@angular/compiler": "~2.1.0",
+    "@angular/core": "~2.1.0",
+    "@angular/forms": "~2.1.0",
+    "@angular/http": "~2.1.0",
+    "@angular/platform-browser": "~2.1.0",
+    "@angular/platform-browser-dynamic": "~2.1.0",
+    "@angular/router": "~3.1.0",
+    "@angular/upgrade": "~2.1.0",
+    "angular-in-memory-web-api": "~0.1.5",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.3",
+    "typings":"^1.4.0"
   }
 }
