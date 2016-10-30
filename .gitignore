@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
+css/
+img/
+index.html
+js/
 node_modules/
-npm-debug.log.1411360597
-typings/
-app/app.module.js
-app/app.module.js.map
